@@ -1,0 +1,95 @@
+\documentclass{beamer}
+%\documentclass{article} \usepackage{beamerarticle}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[turkish]{babel}
+\usepackage{graphicx,verbatim}
+\graphicspath{{./fig/}{./img/}}
+
+\usepackage{./lazyeqn/lazyeqn}
+\usepackage{mdframed}
+
+\setbeamertemplate{caption}[numbered]
+
+\def\hrulespaced{\vspace{1em}\hrule\vspace{1em}}
+\newcommand{\emptyframe}{\begin{frame}[plain]{}\end{frame}}
+%\useoutertheme{infolines}
+%\usefonttheme[onlymath]{serif}
+% \setbeamertemplate{headline}[default]
+%\setbeamertemplate{navigation symbols}{}
+%\mode<beamer>{\setbeamertemplate{blocks}[rounded][shadow=true]}
+%\setbeamercovered{transparent}
+%\setbeamercolor{block body example}{fg=blue, bg=black!20}
+
+% Appearance
+\usetheme{Malmoe}
+\setbeamercovered{transparent}
+\useoutertheme{infolines}
+%\usecolortheme{seagull}
+
+%\transdissolve<1-3>
+
+\title[]{Lorem Ipsum Dolor Sit Amet}
+%\subtitle{A subtitle}
+\date[Jan. 1]{January 1, 1970}
+\author[J. Doe]{John Doe}
+%\institute[Uni Leipzig]{Universitat Leipzig}
+%\logo{\includegraphics[scale=.25]{unilogo.pdf}}
+% <-- generate frame with title
+
+% Search directory for image files
+
+% Misc
+%\usepackage{algpseudocode,algorithm}
+%\usepackage[small,compact]{titlesec}
+%\setlength{\parindent}{0pt}
+%\usepackage{parskip}
+%\usepackage[cm]{fullpage}
+%\usepackage{breqn}
+
+\begin{document}
+
+\frame{\maketitle}
+
+\begin{frame}{Outline}
+  \begin{itemize}[<+->]
+  \item Fundamentals --- setting, stress and strain measures, energy
+  \item The model proposed by the authors
+  \item Linearization of the proposed model
+  \item Integration of the proposed evolution equation
+  \item Experimental results and verification
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Linearization}
+
+  \begin{enumerate}
+
+  \item[0.]\setcounter{enumi}{0} No linearization --- Finite viscoelasticity
+  \item Linearization about --- Finite linear viscoelasticity
+    \\ Valid for \underline{finite strain} in the vicinity of thermodynamic equilibrium
+  \item Linearization about
+    \\ Valid for \underline{small strain} in the vicinity of thermodynamic equilibrium
+  \end{enumerate}
+
+  \framebreak
+
+  First step of the linearization gives:
+  This matches the work by Lubliner [1985].
+  \\[2em]
+  Second step of the linearization gives:
+  which is the evolution for small strain linear viscoelasticity.
+\end{frame}
+
+
+\begin{frame}{References}
+
+\end{frame}
+
+
+\begin{frame}{Questions}
+
+\end{frame}
+
+\end{document}
